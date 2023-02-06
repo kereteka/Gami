@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/header/Header";
+import ContactUs from "./pages/ContactUs/ContactUs";
+import GamiStatistics from "./pages/GamiStatistics/GamiStatistics";
+import Home from "./pages/Home/Home";
+import WhatWeDo from "./pages/WhatWeDo/WhatWeDo";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App text-black bg-[#F3F4F6]">
+      <Header />
+      {/* <Router> */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/gamistatistics" element={<GamiStatistics />} />
+          <Route path="/whatwedo" element={<WhatWeDo />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </Suspense>
+      {/* </Router> */}
     </div>
   );
-}
+};
 
 export default App;

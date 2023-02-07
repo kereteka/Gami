@@ -16,6 +16,7 @@ const variantStyle = {
   dark: `
     bg-blue-gray-800
     hover:bg-blue-gray-700
+    font-semibold
   `,
   light: `
     bg-gray-50
@@ -23,11 +24,15 @@ const variantStyle = {
     border-1
     border-white
     hover:bg-gray-200
+    font-semibold
+
   `,
   darkShadow: `
     bg-blue-gray-800
     shadow-lg
     hover:bg-blue-gray-700
+    font-semibold
+
   `,
   lightShadow: `
     bg-gray-50
@@ -35,7 +40,9 @@ const variantStyle = {
     border-1
     border-white
     shadow-lg
-    hover:bg-gray-200
+    hover:bg-gray-200    
+    font-semibold
+
   `,
 };
 

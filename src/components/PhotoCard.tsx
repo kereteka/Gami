@@ -26,11 +26,11 @@ const PhotoCard: React.FC = () => {
   ];
 
   return (
-    <div className="text-white mt-[400px]">
+    <div className="text-white w-full">
       {data.map((item, index) => (
         <div
           key={index}
-          className={`flex w-[80%] h-48 ${
+          className={`flex w-[80%] items-center h-48 ${
             index % 2 !== 0 ? "flex-row-reverse" : ""
           }`}
         >

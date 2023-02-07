@@ -23,6 +23,9 @@ module.exports = {
           },
         },
       },
+      backgroundImage: {
+        gs: "url('../src/assets/GALATASARAY_3D-F3.png')",
+      },
     },
   },
   plugins: [],

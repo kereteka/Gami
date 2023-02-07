@@ -11,21 +11,21 @@ const Menu: React.FC = () => {
   const location = useLocation();
 
   return (
-    <div className=" flex flex-row p-0 gap-[60px] items-start absolute h-[20px] left-[481px] top-[26px] ">
+    <ul className=" hidden sm:flex justify-between w-[40%] h-auto ml-6 font-light">
       {menuItems.map(({ path, label }: MenuItem, i) => (
-        <div>
-          <p
-            className={`flex-none order-${i} grow-0 text-sm leading-5 ${
-              location.pathname === path ? "font-bold" : ""
-            }`}
-          >
-            <Link to={path} key={i}>
-              {label}
-            </Link>
-          </p>
-        </div>
+        <li
+          title={label}
+          className={`inline-block leading-5 flex-none text-center order-${i} grow-0 text-sm after:block after:font-bold after:overflow-hidden after:invisible after:content-[attr(title)] ${
+            location.pathname === path ? "font-semibold" : ""
+          }`}
+        >
+          <Link to={path} key={i}>
+            {label}
+          </Link>
+        </li>
       ))}
-    </div>
+    </ul>
+    // </div>
   );
 };
 

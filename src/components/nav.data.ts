@@ -9,7 +9,7 @@ const menuItems = [
   },
   {
     path: "/gamistatistics",
-    label: "Gami Statistics",
+    label: "GAMI Statistics",
   },
   {
     path: "/contactus",

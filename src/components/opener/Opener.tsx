@@ -5,7 +5,7 @@ import HeroText from "../HeroText";
 
 const Opener = () => {
   return (
-    <div className="w-full sm:flex px-2 sm:px-12 pt-8 items-center">
+    <div className="w-full h-screen sm:flex px-2 sm:px-12 pt-8 items-center">
       <div className="basis-1/2 mt-12 h-full sm:p-12 ">
         <HeroText
           style={""}

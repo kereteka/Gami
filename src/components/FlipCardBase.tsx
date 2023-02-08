@@ -1,10 +1,8 @@
 import React from "react";
 import cardData from "./card.data";
-import { ReactComponent as Corein } from "../../src/assets/Corein.svg";
 import { Link } from "react-router-dom";
-// import GS from "../../public/GALATASARAY_3D-F3.png";
 
-interface CardData {
+interface CardDataProps {
   header: string;
   text: string;
   link: string;
@@ -13,8 +11,11 @@ interface CardData {
 const FlipCardBase: React.FC = () => {
   return (
     <>
-      {cardData.map(({ header, text, link }: CardData, i) => (
-        <div className="box-border flex flex-col items-center text-center w-[413px] h-[250px] bg-cool-gray-100 border-solid border-1 border-white rounded-lg pt-5 gap-4">
+      {cardData.map(({ header, text, link }: CardDataProps, i) => (
+        <div
+          key={i}
+          className="box-border flex flex-col items-center text-center w-[413px] h-[250px] bg-cool-gray-100 border-solid border-1 border-white rounded-lg pt-5 gap-4"
+        >
           <div className="w-[70px] h-[70px] flex justify-center items-center ">
             <img className="absolute " src={`${header}.svg`} alt="" />
           </div>

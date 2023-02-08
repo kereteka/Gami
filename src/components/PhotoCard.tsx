@@ -26,27 +26,29 @@ const PhotoCard: React.FC = () => {
   ];
 
   return (
-    <div className="text-white w-full">
-      {data.map((item, index) => (
+    <>
+      {data?.map((item, index) => (
         <div
           key={index}
-          className={`flex w-[80%] items-center h-48 ${
-            index % 2 !== 0 ? "flex-row-reverse" : ""
+          className={` block sm:flex sm:w-[80%] h-auto  rounded-lg mt-8 sm:mt-16 ${
+            index % 2 !== 0 ? "sm:flex-row-reverse" : ""
           }`}
         >
           <div
             style={{
               backgroundImage: `url(/${item.photo}.jpeg)`,
             }}
-            className={`basis-1/2 h-64 bg-cover bg-center `}
+            className={`sm:basis-1/2 h-[280px] mb-6 box-border border-solid border-2 border-white rounded-lg bg-cover bg-center shadow-lg`}
           ></div>
-          <div className="basis-1/2">
-            <h2 className="text-blue-gray-800 font-semibold">{item.header}</h2>
-            <p className="text-blue-gray-400">{item.text}</p>
+          <div className="sm:basis-1/2 flex flex-col sm:justify-center text-left sm:text-center ">
+            <h2 className="text-2xl text-blue-gray-800 font-semibold ">
+              {item.header}
+            </h2>
+            <p className="text-base text-blue-gray-400 ">{item.text}</p>
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import React from "react";
 import Accordion from "../components/Accordion";
 import HeroText from "../components/HeroText";
 import faqData from "../components/faq.data";
+import AccordionItem from "../components/opener/AccordionItem";
 
 const FaqSection: React.FC = () => {
   return (
@@ -15,11 +16,12 @@ const FaqSection: React.FC = () => {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci sapien, malesuada sollicitudin mi vel, tristique eleifend metus.",
           }}
         />
-        <div className="w-[846px] h-[380px] rounded-lg">
-          {faqData.map((data, i) => (
-            <Accordion key={i} data={data} />
+        <ul className="w-[846px] h-auto bg-white flex flex-col border border-white rounded-lg mb-12">
+          {faqData?.map((data, i) => (
+            <Accordion key={i} data={data} order={i} length={faqData.length} />
+            // <AccordionItem faq={data} />
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   );

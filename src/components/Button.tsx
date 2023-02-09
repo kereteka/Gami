@@ -9,7 +9,7 @@ interface Props {
 }
 
 const baseStyle = ctl(`
-  flex flex-row justify-center items-center px-[14px] py-[28px] gap-[10px] bg-black rounded-lg h-[52px]
+  flex flex-row justify-center items-center px-[14px] py-[28px] gap-[10px] rounded-lg h-[52px]
 `);
 
 const variantStyle = {
@@ -25,14 +25,12 @@ const variantStyle = {
     border-white
     hover:bg-gray-200
     font-semibold
-
   `,
   darkShadow: `
     bg-blue-gray-800
     shadow-lg
     hover:bg-blue-gray-700
     font-semibold
-
   `,
   lightShadow: `
     bg-gray-50
@@ -42,7 +40,6 @@ const variantStyle = {
     shadow-lg
     hover:bg-gray-200    
     font-semibold
-
   `,
 };
 

@@ -16,7 +16,8 @@ const Footer = () => {
           <AiFillTwitterCircle />
         </div>
       </div>
-      <div className="mx-auto text-sm">
+      <div className="mx-auto text-sm flex gap-4">
+        <a href="https://sengun-co.vercel.app/">Sengun.co</a>
         <p>All rights reserved</p>
       </div>
     </div>

@@ -4,7 +4,7 @@ import PhotoCard from "../components/PhotoCard";
 
 const PhotoSection = () => {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center px-2 sm:px-0">
+    <div className="w-full h-full flex flex-col justify-center items-center px-2 sm:px-0 sm:mt-36">
       <HeroText
         style={"text-center sm:w-[40%]"}
         text={{

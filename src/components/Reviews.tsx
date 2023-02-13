@@ -1,5 +1,3 @@
-import React from "react";
-// import data from "./review.data";
 import Star from "../assets/Star.svg";
 
 interface ReviewsProps {

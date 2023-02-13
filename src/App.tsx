@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import GamiStatistics from "./pages/GamiStatistics/GamiStatistics";
@@ -10,7 +11,6 @@ const App: React.FC = () => {
   return (
     <div className="App text-black bg-[#F3F4F6]">
       <Header />
-      {/* <Router> */}
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ const App: React.FC = () => {
           <Route path="*" element={<Home />} />
         </Routes>
       </Suspense>
-      {/* </Router> */}
+      <Footer />
     </div>
   );
 };

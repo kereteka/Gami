@@ -8,11 +8,11 @@ const text = {
 };
 const WhatWeDo = () => {
   return (
-    <div className="bg-gray-200 w-full h-full container flex flex-wrap">
-      <div className="w-full flex justify-center">
+    <div className=" w-full h-[70vh] container flex flex-wrap">
+      {/* <div className="w-full flex justify-center">
         <HeroText style="text-center" text={text} />
       </div>
-      <FlipCardBase />
+      <FlipCardBase /> */}
     </div>
   );
 };

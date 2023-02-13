@@ -27,6 +27,9 @@ module.exports = {
         gs: "url('../src/assets/GALATASARAY_3D-F3.png')",
       },
     },
+    scale: {
+      "-100": "-1",
+    },
   },
   plugins: [],
 };

@@ -1,11 +1,12 @@
 import ctl from "@netlify/classnames-template-literals";
 import React from "react";
 
-interface Props {
+interface ButtonProps {
   text: string;
   onClick: () => void;
   className?: string;
   variant?: keyof typeof variantStyle;
+  // type?: "button" | "submit" | "reset" | undefined;
 }
 
 const baseStyle = ctl(`
@@ -43,11 +44,12 @@ const variantStyle = {
   `,
 };
 
-const Button: React.FC<Props> = ({
+const Button: React.FC<ButtonProps> = ({
   text,
   onClick,
   variant = "dark",
   className = "",
+  // type,
 }) => {
   const buttonStyle = ctl(`
     ${className}

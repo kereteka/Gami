@@ -18,6 +18,7 @@ const Header = () => {
         onClick={function (): void {
           throw new Error("Function not implemented.");
         }}
+        // type="submit"
         variant="dark"
         className="text-white w-[132px] h-[52px]"
       />

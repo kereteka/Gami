@@ -105,7 +105,7 @@ const CarouselElement: React.FC = () => {
           className="w-full h-full flex overflow-x-scroll scroll-smooth scrollbar-hide relative"
         >
           {data.map((data, id) => (
-            <div id="reviews" className="basis-1/2 px-2">
+            <div key={id} id="reviews" className="basis-1/2 px-2">
               <Reviews key={id} data={data} />
             </div>
           ))}

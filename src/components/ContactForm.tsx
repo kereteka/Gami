@@ -20,12 +20,15 @@ const ContactForm: React.FC = () => {
     setFormValues({ ...formValues, [name]: value });
   };
 
-  // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-  //   console.log("annen");
-  // };
-
   const handleClick = () => {
+    if (
+      formValues.name === "" ||
+      formValues.email === "" ||
+      formValues.message === ""
+    ) {
+      alert("Please fill the required areas");
+      return;
+    }
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
@@ -39,10 +42,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <div>
-      <form
-        // onSubmit={handleSubmit}
-        className="flex flex-col bg-gray-50 gap-6 w-full pl-4 pr-5 pt-7 pb-8 border border-solid border-white shadow-xl rounded-lg"
-      >
+      <form className="flex flex-col bg-gray-50 gap-6 w-full pl-4 pr-5 pt-7 pb-8 border border-solid border-white shadow-xl rounded-lg">
         <label>
           <input
             className="w-full rounded-lg h-[43px] box-border bg-gray-100 border border-solid border-gray-200 px-4 text-base leading-6 font-medium"

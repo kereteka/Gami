@@ -12,12 +12,9 @@ const FlipCardBase: React.FC = () => {
   return (
     <>
       {cardData.map(({ header, text, link }: CardDataProps, i) => (
-        <div className="group [perspective:1000px] w-auto h-auto  ">
+        <div key={i} className="group [perspective:1000px] w-auto h-auto  ">
           <div className="relative transition-all duration-500  [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-            <div
-              key={i}
-              className=" absolute [transform:rotateY(180deg)] [backface-visibility:hidden] text-white bg-cool-gray-800 box-border flex flex-col items-center text-center w-[413px] h-[250px] border-solid border-1 border-white rounded-lg pt-5 gap-4"
-            >
+            <div className=" absolute [transform:rotateY(180deg)] [backface-visibility:hidden] text-white bg-cool-gray-800 box-border flex flex-col items-center text-center w-[413px] h-[250px] border-solid border-1 border-white rounded-lg pt-5 gap-4">
               <div className="w-[70px] h-[70px] flex justify-center items-center ">
                 <img className="absolute  " src={`${header}W.svg`} alt="" />
               </div>
@@ -31,10 +28,7 @@ const FlipCardBase: React.FC = () => {
                 <p className="text-sm leading-5 font-medium underline">visit</p>
               </Link>
             </div>
-            <div
-              key={i}
-              className=" box-border flex flex-col items-center text-center w-[413px] h-[250px] bg-cool-gray-100 border-solid border-1 border-white rounded-lg pt-5 gap-4 [backface-visibility:hidden]"
-            >
+            <div className=" box-border flex flex-col items-center text-center w-[413px] h-[250px] bg-cool-gray-100 border-solid border-1 border-white rounded-lg pt-5 gap-4 [backface-visibility:hidden]">
               <div className="w-[70px] h-[70px] flex justify-center items-center ">
                 <img className="absolute " src={`${header}.svg`} alt="" />
               </div>

@@ -1,6 +1,5 @@
-import React from "react";
 import ContactForm from "../../components/ContactForm";
-import HeroText from "../../components/HeroText";
+import Loading from "../../components/Loading";
 
 const ContactUs = () => {
   return (

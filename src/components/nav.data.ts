@@ -1,4 +1,9 @@
-const menuItems = [
+interface MenuItem {
+  path: string;
+  label: string;
+}
+
+const menuItems: MenuItem[] = [
   {
     path: "/home",
     label: "Home",

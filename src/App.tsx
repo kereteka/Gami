@@ -10,14 +10,42 @@ import WhatWeDo from "./pages/WhatWeDo/WhatWeDo";
 const App: React.FC = () => {
   return (
     <div className="App text-black bg-[#F3F4F6]">
-      <Header />
+      <Header
+        onClick={function (): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <Home
+                exploreGamiOnClick={function (): void {
+                  throw new Error("Function not implemented.");
+                }}
+                buyGamiOnClick={function (): void {
+                  throw new Error("Function not implemented.");
+                }}
+              />
+            }
+          />
           <Route path="/gamistatistics" element={<GamiStatistics />} />
           <Route path="/whatwedo" element={<WhatWeDo />} />
           <Route path="/contactus" element={<ContactUs />} />
-          <Route path="*" element={<Home />} />
+          <Route
+            path="*"
+            element={
+              <Home
+                exploreGamiOnClick={function (): void {
+                  throw new Error("Function not implemented.");
+                }}
+                buyGamiOnClick={function (): void {
+                  throw new Error("Function not implemented.");
+                }}
+              />
+            }
+          />
         </Routes>
       </Suspense>
       <Footer />

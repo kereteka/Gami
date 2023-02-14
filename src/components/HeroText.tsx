@@ -1,6 +1,6 @@
 import React from "react";
 
-interface HeroTextProps {
+export interface HeroTextProps {
   style: string;
   text: {
     title: string;

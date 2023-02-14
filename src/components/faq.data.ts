@@ -1,4 +1,9 @@
-const faqData = [
+interface FAQData {
+  title: string;
+  content: string;
+}
+
+const faqData: FAQData[] = [
   {
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.?",
     content:

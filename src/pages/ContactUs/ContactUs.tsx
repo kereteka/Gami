@@ -1,7 +1,6 @@
 import ContactForm from "../../components/ContactForm";
-import Loading from "../../components/Loading";
 
-const ContactUs = () => {
+const ContactUs: React.FC = () => {
   return (
     <div className=" h-[100%] sm:flex w-[100%] m-auto bg-gray-100 pt-10 pb-5 container">
       <div className="basis-1/2 px-4">

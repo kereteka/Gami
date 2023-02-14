@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import cardData from "./card.data";
 import { Link } from "react-router-dom";
 

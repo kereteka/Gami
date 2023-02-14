@@ -2,7 +2,7 @@ import React from "react";
 import HeroText from "../components/HeroText";
 import PhotoCard from "../components/PhotoCard";
 
-const PhotoSection = () => {
+const PhotoSection: React.FC = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center px-2 sm:px-0 sm:mt-36">
       <HeroText

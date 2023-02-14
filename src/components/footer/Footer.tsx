@@ -3,7 +3,7 @@ import Menu from "./Menu";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { ReactComponent as Logo } from "../../assets/Logo.svg";
 
-const Footer = () => {
+const Footer: React.FC = (): JSX.Element => {
   return (
     <div className="flex flex-col sm:mt-24 p-4 md:px-16 ">
       <div className="flex justify-between border-t pt-10 border-gray-300">

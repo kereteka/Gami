@@ -1,4 +1,9 @@
-const reviewData = [
+const reviewData: {
+  name: string;
+  img: string;
+  comment: string;
+  star: number;
+}[] = [
   {
     name: "Lorem Ipsum",
     img: "CLIENT_PHOTO.PNG",

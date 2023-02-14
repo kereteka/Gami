@@ -1,15 +1,12 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import menuItems from "../nav.data";
 
 interface MenuItem {
   path: string;
   label: string;
 }
-// text-sm/leading-5/font-semibold
 const Menu: React.FC = () => {
-  const location = useLocation();
-
   return (
     <ul className=" hidden sm:flex justify-between w-[40%] h-auto ml-6 font-light">
       {menuItems.map(({ path, label }: MenuItem, i) => (
@@ -24,7 +21,6 @@ const Menu: React.FC = () => {
         </li>
       ))}
     </ul>
-    // </div>
   );
 };
 

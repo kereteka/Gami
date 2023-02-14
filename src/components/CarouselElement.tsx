@@ -1,5 +1,4 @@
 import React from "react";
-import "react-multi-carousel/lib/styles.css";
 import data from "./review.data";
 import Reviews from "./Reviews";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";

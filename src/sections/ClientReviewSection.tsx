@@ -4,7 +4,7 @@ import HeroText, { HeroTextProps } from "../components/HeroText";
 
 const ClientReviewSection: React.FC = () => {
   const heroTextProps: HeroTextProps = {
-    style: "text-center sm:w-[630px]",
+    className: "text-center sm:w-[630px]",
     text: {
       title: "Lorem Ipsum Dolor Sit Amet",
       description:

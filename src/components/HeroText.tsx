@@ -1,16 +1,16 @@
 import React from "react";
 
 export interface HeroTextProps {
-  style: string;
+  className: string;
   text: {
     title: string;
     description: string;
   };
 }
 
-const HeroText: React.FC<HeroTextProps> = ({ style, text }) => {
+const HeroText: React.FC<HeroTextProps> = ({ className, text }) => {
   return (
-    <div className={`${style}`}>
+    <div className={className}>
       <h1 className="font-semibold text-4xl sm:text-7xl text-blue-gray-800 leading-10 sm:leading-none">
         {text.title}
       </h1>

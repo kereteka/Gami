@@ -15,7 +15,7 @@ const FaqSection: React.FC = () => {
     <div className="w-full h-full px-2 sm:px-0 flex flex-col items-center mt-24">
       <div className="w-full md:w-[846px] h-full ">
         <HeroText
-          style={"text-center"}
+          className={"text-center"}
           text={{
             title: "Lorem Ipsum",
             description:

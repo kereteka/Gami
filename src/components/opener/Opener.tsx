@@ -14,9 +14,12 @@ const Opener: React.FC<OpenerProps> = ({
 }: OpenerProps): JSX.Element => {
   return (
     <div className="w-full h-full sm:flex px-2 md:px-12 pt-8 items-center">
-      <div className="basis-1/2 mt-12 h-full md:p-12 ">
+      <div
+        className="basis-1/2 mt-12 h-full md:p-12 "
+        style={{ backgroundImage: "url(illustration.png)" }}
+      >
         <HeroText
-          style={""}
+          className={""}
           text={{
             title: "Lorem Ipsum Dolor Sit Amet",
             description:
